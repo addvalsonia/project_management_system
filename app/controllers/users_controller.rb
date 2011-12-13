@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
   def index
-    debugger
     @organizations = Organization.all
     respond_to do |format|
       format.html # index.html.erb
@@ -80,6 +79,15 @@ class UsersController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(users_url) }
       format.xml  { head :ok }
+    end
+  end
+  
+  def project_user_in_org
+    debugger
+    @projects = Project.find_by_sql("select * from projects where id in(select project_id from org_projects where organization_id = #{ params[:id] })")
+    
+    respond_to do |format|
+      format.js
     end
   end
 end
