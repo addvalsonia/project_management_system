@@ -1,2 +1,21 @@
-<h1>UserSessions#new</h1>
-<p>Find me in app/views/user_sessions/new.html.erb</p>
+<div style="width: 100%">
+	<div style="border: 1px solid; background-color: #ddb9b9; width: 50%; margin: auto">
+		<% form_for(:user_session) do |f|%>
+		<%= f.error_messages %>
+			<table width="100%" align="center">
+				<tr>
+					<td>Email/Username : </td>
+					<td><%= f.text_field :username, :style => "width: 300px; height: 30px; font-size: large"%></td>
+				</tr>
+				<tr>
+					<td>Password : </td>
+					<td><%= f.password_field :password, :style => "width: 300px; height: 30px; font-size: large",:autocomplete => "false"%></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><%= f.submit 'login'%></td>
+				</tr>
+			</table>
+		<% end %>
+	</div>
+</div>
