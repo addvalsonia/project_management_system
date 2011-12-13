@@ -1,0 +1,97 @@
+#header_wrap {
+	border-bottom: 1px solid #DDD;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #DDD;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(238, 238, 238, 0)),to(#EEE));
+	background-image: -moz-linear-gradient(rgba(238, 238, 238, 0),#EEE);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=white, endColorstr=#EEE, GradientType=0)";
+	padding-bottom: 5px;
+}
+
+#navigation_div{
+	border-bottom: 1px solid #DDD;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #DDD;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(238, 238, 238, 0)),to(#EEE));
+	background-image: -moz-linear-gradient(rgba(238, 238, 238, 0),#EEE);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=white, endColorstr=#EEE, GradientType=0)";
+	padding-bottom: 5px;
+	
+}
+div.header {
+	width: 960px;
+	margin: 0 auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-top: 5px;
+	height: 40px;
+}
+
+div.header #user_utilities {
+	float: right;
+	margin-top: 2px;
+	padding: 0;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	text-align: right;
+}
+
+#user_utilities .global_navigation {
+	padding:0;
+	margin-right:10px;
+	margin-top:10px;
+	text-align:right;
+	list-style-type:none;
+	font-size:11px;
+}
+
+#column_wrap {
+	float: left;
+	width: 300px;
+	font-size: 12px;
+	margin-left:15px;
+}
+
+#column_bar {
+	width: 300px;
+}
+#column_wrap div.column {
+	background: white;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: white;
+	padding: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 0;
+	border-right: 1px solid #EEE;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #EEE;
+	min-height: 200px;
+	max-width:280px;
+}
+#column_wrap {
+	font-size: 12px;
+}
+
+div.column_wrap_bar div.column {
+	background:white;
+	padding:10px;
+	padding-left:0;
+	border-right:1px solid #eee;
+	min-height:300px;
+}
+
+#column{
+	width:300px;
+	float :right;
+}

@@ -1,0 +1,17 @@
+<div id="column_wrap" class="column_wrap_bar" style=" height: 391px;">
+	<div class="column" id="column_bar">
+		<ul>
+			<li style = "list-style-type:none"><p><b>Organizations</b></p> 
+				<% if @organizations.size > 0 %>
+					<% @organizations.each do |o| %>
+					<ul>
+						<li><%= link_to o.org_name %> </li>
+					</ul>
+					<% end %>
+				<% else %>
+					<p>No Organization</p>
+				<% end %>
+			</li>
+		</ul>
+	</div>
+</div>
