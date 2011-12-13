@@ -1,0 +1,14 @@
+log/*.log
+config/database.yml
+data
+assets
+env
+db/*.sqlite3
+db/schema.rb
+tmp/**/*
+doc/api
+doc/app
+lib/user_uploaded
+nbproject
+.DS_Store
+public/assets
