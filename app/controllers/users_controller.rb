@@ -7,6 +7,8 @@ class UsersController < ApplicationController
       @organizations = Organization.all
     elsif current_user.role == "ru"
       @organizations = Organization.find_by_sql("select * from organizations where id in (select organization_id from org_users where user_id = #{current_user.id}) ")
+    elsif current_user.role == "sub"
+      @projects = Project.find_by_sql("select * for projects where id in (select project_id from user_project where user_id = '#{current_user.id}')")
     end  
     respond_to do |format|
       format.html # index.html.erb

@@ -2,17 +2,17 @@
 	<div class="column" id="column_bar">
 		<ul>
 			<li style = "list-style-type:none"><p><b>Organizations</b></p>
-				<% if @organizations.size > 0 %>
-					<% @organizations.each do |o| %>
+				<% if @projects.size > 0 %>
+					<% @projects.each do |p| %>
 					<ul>
-						<li><%= link_to_remote o.org_name, :url => project_user_in_org_path(o) %> </li>
+						<li><%= link_to_remote o.org_name %> </li>
 					</ul>
 					<% end %>
 				<% else %>
-					<p>No Organization</p>
+					<p>No Projetcs assigned to you</p>
 				<% end %>
 			</li><br />
-			<li style="list-style-type: none"><%= link_to_remote "+ New Organization", :url => new_organization_path, :method => :get %> </li>
+			<li style="list-style-type: none"><%= link_to_remote "+ New Organization" %> </li>
 		</ul>
 	</div>
 </div>
