@@ -1,14 +1,20 @@
-<table>
-	<tr>
-		<th>Project Name</th>
-		<th>Description</th>
-	</tr>
-	<% @projects.each do |p| %>
-		<tr>
-			<td><%= p.project_name%> </td>
-			<td><%= p.desc%></td>
-		</tr>
-	<% end %>
-		
+<div class="organization_projects" >
+	<h3 style="text-align: center">Projects in <%= @organizations.org_name%></h3>
+	<table cellpadding="3" cellspacing="3" align="center" width="50%" style="text-align: center">
+		<% if @projects.size > 0 %>
+			<tr>
+				<th>Project Name</th>
+				<th>Description</th>
+			</tr>
+			<% @projects.each do |p| %>
+				<tr>
+					<td><%= p.project_name%> </td>
+					<td><%= p.desc%></td>
+				</tr>
+			<% end %>
+		<% else %>
+			<tr><h3>No Project</h3></tr>
+		<% end %>
+	</table>
 	
-</table>
+</div>

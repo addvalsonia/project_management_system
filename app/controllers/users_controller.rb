@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
   def index
+    
     @organizations = Organization.all
     respond_to do |format|
       format.html # index.html.erb
@@ -83,11 +84,12 @@ class UsersController < ApplicationController
   end
   
   def project_user_in_org
-    debugger
+   
     @projects = Project.find_by_sql("select * from projects where id in(select project_id from org_projects where organization_id = #{ params[:id] })")
-    
+    @users = User.find_by_sql("select * from users where id in(select user_id from org_users where organization_id = #{ params[:id] })")
+    @organizations = Organization.find(params[:id])
     respond_to do |format|
-      format.js
+      format.js 
     end
   end
 end
