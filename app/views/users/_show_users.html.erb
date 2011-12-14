@@ -1,6 +1,6 @@
 <div class="organization_users" >
 	<h3 style="text-align: center">Users in <%= @organizations.org_name%></h3>
-	<table cellpadding="3" cellspacing="3" align="center" width="50%" style="text-align: center">
+	<table cellpadding="3" cellspacing="3" width="50%" >
 		<% if @users.size > 0 %>
 			<tr>
 				<th>Name</th>
@@ -8,7 +8,7 @@
 			</tr>
 			<% @users.each do |u| %>
 				<tr>
-					<td><%= u.first_name%> </td>
+					<td><%= u.first_name%> <%= u.last_name%></td>
 					<td><%= u.email%></td>
 				</tr>
 			<% end %>
