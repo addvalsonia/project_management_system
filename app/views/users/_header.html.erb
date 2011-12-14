@@ -1,8 +1,9 @@
 <div id="header_wrap">
 	<div class="header">
 		<div id="user_utilities">
-			<ol class="global_navigation">				
-				<li><%= "Logout" %></li>
+			<ol class="global_navigation">
+				<li><b>Loggeg in as : <%= current_user.username %></b></li>				
+				<li><%= link_to 'Logout', logout_path%></li>
 			</ol>
 		</div>
 

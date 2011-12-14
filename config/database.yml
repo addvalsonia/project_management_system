@@ -21,7 +21,7 @@ development:
   database: project_management_system_development
   pool: 5
   username: root
-  password: 123
+  password: 
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and

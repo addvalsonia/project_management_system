@@ -1,4 +1,7 @@
 <div style="width: 100%">
+	<% unless flash[:notice].blank?%>
+	<div style="background-color: #cfcfcf; border: 1px solid;padding: 5px;margin: 5px 0"><%= flash[:notice]%></div>
+	<% end %>
 	<div style="border: 1px solid; background-color: #ddb9b9; width: 50%; margin-top: 250px; margin-left: 300px;padding: 5px">
 		<% form_for(:user_session, :url => loggedin_path) do |f|%>
 		<%= f.error_messages %>

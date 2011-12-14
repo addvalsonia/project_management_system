@@ -3810,3 +3810,1026 @@ Completed in 19ms (DB: 2) | 302 Found [http://localhost/loggedin]
 Processing UsersController#index (for 127.0.0.1 at 2011-12-14 12:36:09) [GET]
   [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
   [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '3') LIMIT 1[0m
+/!\ FAILSAFE /!\  Wed Dec 14 12:40:18 +0530 2011
+  Status: 500 Internal Server Error
+  Access denied for user 'root'@'localhost' (using password: YES)
+    /usr/lib/ruby/1.8/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+    /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+    /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+    /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+    /home/faiz/work/project_management_system/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+    /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+    /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+    /home/faiz/work/project_management_system/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+    /usr/lib/ruby/1.8/rack/chunked.rb:15:in `call'
+    /usr/lib/ruby/1.8/rack/handler/mongrel.rb:67:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/rack/handler/mongrel.rb:38:in `run'
+    /home/faiz/work/project_management_system/vendor/rails/railties/lib/commands/server.rb:111
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Wed Dec 14 12:40:43 +0530 2011
+  Status: 500 Internal Server Error
+  Access denied for user 'root'@'localhost' (using password: YES)
+    /usr/lib/ruby/1.8/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+    /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+    /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+    /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+    /home/faiz/work/project_management_system/vendor/rails/railties/lib/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+    /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+    /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+    /home/faiz/work/project_management_system/vendor/rails/railties/lib/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+    /usr/lib/ruby/1.8/rack/chunked.rb:15:in `call'
+    /usr/lib/ruby/1.8/rack/handler/mongrel.rb:67:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/rack/handler/mongrel.rb:38:in `run'
+    /home/faiz/work/project_management_system/vendor/rails/railties/lib/commands/server.rb:111
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 12:40:57) [GET]
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 34ms (View: 16, DB: 1) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-12-14 12:41:02) [POST]
+  Parameters: {"commit"=>"login", "user_session"=>{"username"=>"saif", "password"=>"12345"}, "authenticity_token"=>"awFzsgVFZgmgtR9fRI0g34GkOMXKXbiJgfIQkJ3cXJE="}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'saif') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/users
+Completed in 122ms (DB: 2) | 302 Found [http://127.0.0.1/loggedin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 12:41:02) [GET]
+  [4;35;1mOrganization Load (0.2ms)[0m   [0mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered users/_header (0.5ms)
+Rendered users/_navigation_bar (0.8ms)
+Completed in 31ms (View: 19, DB: 0) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-12-14 12:44:44) [GET]
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/new
+Completed in 26ms (View: 11, DB: 1) | 200 OK [http://127.0.0.1/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:05:25) [GET]
+  [4;35;1mOrganization Load (0.2ms)[0m   [0mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_header (65.9ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 84ms (View: 70, DB: 3) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:09:55) [GET]
+  [4;36;1mOrganization Load (0.2ms)[0m   [0;1mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_header (14.1ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 28ms (View: 16, DB: 1) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:10:31) [GET]
+  [4;35;1mOrganization Load (0.2ms)[0m   [0mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_header (59.8ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 78ms (View: 64, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:11:04) [GET]
+  [4;36;1mOrganization Load (0.2ms)[0m   [0;1mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_header (17.5ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 32ms (View: 19, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:11:26) [GET]
+  [4;35;1mOrganization Load (0.1ms)[0m   [0mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_header (13.7ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 75ms (View: 18, DB: 1) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:11:29) [GET]
+  [4;36;1mOrganization Load (0.2ms)[0m   [0;1mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_header (15.6ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 31ms (View: 17, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:12:11) [GET]
+  [4;35;1mOrganization Load (0.2ms)[0m   [0mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_header (14.4ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 31ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-12-14 13:12:13) [GET]
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 17ms (DB: 2) | 302 Found [http://127.0.0.1/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:12:13) [GET]
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 19ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:17:08) [GET]
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 21ms (View: 6, DB: 1) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:17:10) [GET]
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #2 of app/views/user_sessions/new.html.erb:
+1: <div style="width: 100%">
+2: 	<% unless flash[:notice].empty?%>
+3: 	<div style="background-color: #cfcfcf; border: 1px solid;padding: 5px;margin: 5px 0"><%= flash[:notice]%></div>
+4: 	<% end %>
+5: 	<div style="border: 1px solid; background-color: #ddb9b9; width: 50%; margin-top: 250px; margin-left: 300px;padding: 5px">
+
+    app/views/user_sessions/new.html.erb:2
+    /usr/lib/ruby/1.8/action_view/renderable.rb:34:in `send'
+    /usr/lib/ruby/1.8/action_view/renderable.rb:34:in `render'
+    /usr/lib/ruby/1.8/action_view/base.rb:306:in `with_template'
+    /usr/lib/ruby/1.8/action_view/renderable.rb:30:in `render'
+    /usr/lib/ruby/1.8/action_view/template.rb:205:in `render_template'
+    /usr/lib/ruby/1.8/action_view/base.rb:265:in `render'
+    /usr/lib/ruby/1.8/action_controller/base.rb:1250:in `render_for_file'
+    /usr/lib/ruby/1.8/action_controller/base.rb:945:in `render_without_benchmark'
+    /usr/lib/ruby/1.8/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/action_controller/base.rb:1326:in `default_render'
+    /usr/lib/ruby/1.8/action_controller/base.rb:1332:in `perform_action_without_filters'
+    /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+    /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+    /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+    /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+    /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+    /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+    /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+    /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+    /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+    /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+    /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+    /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+    /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+    /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+    /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+    /usr/lib/ruby/1.8/rack/chunked.rb:15:in `call'
+    /usr/lib/ruby/1.8/rack/handler/mongrel.rb:67:in `process'
+    /usr/lib/ruby/1.8/rack/handler/mongrel.rb:38:in `run'
+
+Rendered rescues/_trace (75.8ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-12-14 13:17:28) [GET]
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.destroy):
+  app/controllers/user_sessions_controller.rb:16:in `destroy'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:1331:in `perform_action_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+  /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+  /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+  /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+  /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+  /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+  /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+  /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+  /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+  /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+  /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+  /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+  /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+  /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+  /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+  /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+  /usr/lib/ruby/1.8/rack/chunked.rb:15:in `call'
+  /usr/lib/ruby/1.8/rack/handler/mongrel.rb:67:in `process'
+  /usr/lib/ruby/1.8/rack/handler/mongrel.rb:38:in `run'
+
+Rendered rescues/_trace (22.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:17:38) [GET]
+  [4;36;1mUser Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #2 of app/views/user_sessions/new.html.erb:
+1: <div style="width: 100%">
+2: 	<% unless flash[:notice].empty?%>
+3: 	<div style="background-color: #cfcfcf; border: 1px solid;padding: 5px;margin: 5px 0"><%= flash[:notice]%></div>
+4: 	<% end %>
+5: 	<div style="border: 1px solid; background-color: #ddb9b9; width: 50%; margin-top: 250px; margin-left: 300px;padding: 5px">
+
+    app/views/user_sessions/new.html.erb:2
+    /usr/lib/ruby/1.8/action_view/renderable.rb:34:in `send'
+    /usr/lib/ruby/1.8/action_view/renderable.rb:34:in `render'
+    /usr/lib/ruby/1.8/action_view/base.rb:306:in `with_template'
+    /usr/lib/ruby/1.8/action_view/renderable.rb:30:in `render'
+    /usr/lib/ruby/1.8/action_view/template.rb:205:in `render_template'
+    /usr/lib/ruby/1.8/action_view/base.rb:265:in `render'
+    /usr/lib/ruby/1.8/action_controller/base.rb:1250:in `render_for_file'
+    /usr/lib/ruby/1.8/action_controller/base.rb:945:in `render_without_benchmark'
+    /usr/lib/ruby/1.8/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/action_controller/base.rb:1326:in `default_render'
+    /usr/lib/ruby/1.8/action_controller/base.rb:1332:in `perform_action_without_filters'
+    /usr/lib/ruby/1.8/action_controller/filters.rb:617:in `call_filters'
+    /usr/lib/ruby/1.8/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/action_controller/rescue.rb:160:in `perform_action_without_flash'
+    /usr/lib/ruby/1.8/action_controller/flash.rb:146:in `perform_action'
+    /usr/lib/ruby/1.8/action_controller/base.rb:532:in `send'
+    /usr/lib/ruby/1.8/action_controller/base.rb:532:in `process_without_filters'
+    /usr/lib/ruby/1.8/action_controller/filters.rb:606:in `process'
+    /usr/lib/ruby/1.8/action_controller/base.rb:391:in `process'
+    /usr/lib/ruby/1.8/action_controller/base.rb:386:in `call'
+    /usr/lib/ruby/1.8/action_controller/routing/route_set.rb:437:in `call'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:87:in `dispatch'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:121:in `_call'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/1.8/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/1.8/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/1.8/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby/1.8/rack/head.rb:9:in `call'
+    /usr/lib/ruby/1.8/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/1.8/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/1.8/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/lib/ruby/1.8/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/1.8/rack/lock.rb:11:in `synchronize'
+    /usr/lib/ruby/1.8/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:114:in `call'
+    /usr/lib/ruby/1.8/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby/1.8/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby/1.8/rack/urlmap.rb:47:in `call'
+    /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `each'
+    /usr/lib/ruby/1.8/rack/urlmap.rb:41:in `call'
+    /usr/lib/ruby/1.8/rack/content_length.rb:13:in `call'
+    /usr/lib/ruby/1.8/rack/chunked.rb:15:in `call'
+    /usr/lib/ruby/1.8/rack/handler/mongrel.rb:67:in `process'
+    /usr/lib/ruby/1.8/rack/handler/mongrel.rb:38:in `run'
+
+Rendered rescues/_trace (75.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:20:52) [GET]
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 23ms (View: 7, DB: 1) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-12-14 13:20:56) [POST]
+  Parameters: {"commit"=>"login", "user_session"=>{"username"=>"saif", "password"=>"12345"}, "authenticity_token"=>"awFzsgVFZgmgtR9fRI0g34GkOMXKXbiJgfIQkJ3cXJE="}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'saif') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/users
+Completed in 15ms (DB: 2) | 302 Found [http://127.0.0.1/loggedin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:20:56) [GET]
+  [4;36;1mOrganization Load (0.2ms)[0m   [0;1mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_header (56.5ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 73ms (View: 58, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-12-14 13:20:59) [GET]
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 26ms (DB: 2) | 302 Found [http://127.0.0.1/logout]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:20:59) [GET]
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 18ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:21:01) [GET]
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 18ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:21:05) [GET]
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 28ms (View: 7, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-12-14 13:21:10) [POST]
+  Parameters: {"commit"=>"login", "user_session"=>{"username"=>"saif", "password"=>"12345"}, "authenticity_token"=>"awFzsgVFZgmgtR9fRI0g34GkOMXKXbiJgfIQkJ3cXJE="}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'saif') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/users
+Completed in 17ms (DB: 2) | 302 Found [http://127.0.0.1/loggedin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:21:10) [GET]
+  [4;36;1mOrganization Load (0.2ms)[0m   [0;1mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_header (15.7ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 31ms (View: 17, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-12-14 13:21:12) [GET]
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 16ms (DB: 2) | 302 Found [http://127.0.0.1/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:21:12) [GET]
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 21ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-12-14 13:21:41) [POST]
+  Parameters: {"commit"=>"login", "user_session"=>{"username"=>"saif", "password"=>"12345"}, "authenticity_token"=>"awFzsgVFZgmgtR9fRI0g34GkOMXKXbiJgfIQkJ3cXJE="}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'saif') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/users
+Completed in 17ms (DB: 2) | 302 Found [http://127.0.0.1/loggedin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:21:41) [GET]
+  [4;36;1mOrganization Load (0.1ms)[0m   [0;1mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_header (15.3ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 30ms (View: 18, DB: 3) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:25:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mOrganization Load (0.2ms)[0m   [0mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered users/_header (0.1ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 27ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-12-14 13:25:05) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 29ms (DB: 2) | 302 Found [http://127.0.0.1/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:25:05) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 19ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-12-14 13:25:25) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 10ms (DB: 1) | 302 Found [http://127.0.0.1/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:25:25) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 18ms (View: 3, DB: 1) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:25:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 11ms (DB: 1) | 302 Found [http://127.0.0.1/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:25:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 65ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-12-14 13:25:37) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 12ms (DB: 1) | 302 Found [http://127.0.0.1/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:25:37) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 18ms (View: 3, DB: 1) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-12-14 13:25:42) [POST]
+  Parameters: {"commit"=>"login", "user_session"=>{"username"=>"saif", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"awFzsgVFZgmgtR9fRI0g34GkOMXKXbiJgfIQkJ3cXJE=", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'saif') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/users
+Completed in 16ms (DB: 2) | 302 Found [http://127.0.0.1/loggedin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:25:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mOrganization Load (0.1ms)[0m   [0mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered users/_header (0.1ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 28ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-12-14 13:25:46) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 17ms (DB: 2) | 302 Found [http://127.0.0.1/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:25:46) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 19ms (View: 3, DB: 1) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:27:36) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 17ms (View: 3, DB: 1) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-12-14 13:27:40) [POST]
+  Parameters: {"commit"=>"login", "user_session"=>{"username"=>"saif", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"awFzsgVFZgmgtR9fRI0g34GkOMXKXbiJgfIQkJ3cXJE=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'saif') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/users
+Completed in 14ms (DB: 1) | 302 Found [http://127.0.0.1/loggedin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:27:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mOrganization Load (0.1ms)[0m   [0;1mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered users/_header (0.2ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 79ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:28:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mOrganization Load (0.1ms)[0m   [0mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered users/_header (0.2ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 39ms (View: 6, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-12-14 13:28:04) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 16ms (DB: 2) | 302 Found [http://127.0.0.1/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:28:04) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 65ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (1.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-12-14 13:28:08) [POST]
+  Parameters: {"commit"=>"login", "user_session"=>{"username"=>"saif", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"awFzsgVFZgmgtR9fRI0g34GkOMXKXbiJgfIQkJ3cXJE=", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'saif') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/users
+Completed in 18ms (DB: 3) | 302 Found [http://127.0.0.1/loggedin]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:28:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mOrganization Load (0.2ms)[0m   [0mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered users/_header (0.2ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 29ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-12-14 13:28:18) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 16ms (DB: 2) | 302 Found [http://127.0.0.1/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:28:18) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 29ms (View: 6, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:29:02) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 19ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-12-14 13:29:06) [POST]
+  Parameters: {"commit"=>"login", "user_session"=>{"username"=>"saif", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"awFzsgVFZgmgtR9fRI0g34GkOMXKXbiJgfIQkJ3cXJE=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'saif') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/users
+Completed in 17ms (DB: 2) | 302 Found [http://127.0.0.1/loggedin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:29:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mOrganization Load (0.1ms)[0m   [0;1mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered users/_header (0.1ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 30ms (View: 6, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-12-14 13:29:11) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 16ms (DB: 2) | 302 Found [http://127.0.0.1/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:29:11) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 19ms (View: 3, DB: 1) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-12-14 13:29:28) [POST]
+  Parameters: {"commit"=>"login", "user_session"=>{"username"=>"saif", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"awFzsgVFZgmgtR9fRI0g34GkOMXKXbiJgfIQkJ3cXJE=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'saif') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/users
+Completed in 24ms (DB: 2) | 302 Found [http://127.0.0.1/loggedin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:29:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mOrganization Load (0.2ms)[0m   [0;1mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered users/_header (0.2ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 30ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:29:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mOrganization Load (0.1ms)[0m   [0mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered users/_header (0.1ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 26ms (View: 3, DB: 1) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-12-14 13:29:31) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 24ms (DB: 2) | 302 Found [http://127.0.0.1/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:29:32) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 20ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:30:09) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 21ms (View: 6, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:30:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 21ms (View: 6, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:30:26) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 23ms (View: 7, DB: 2) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-12-14 13:31:14) [POST]
+  Parameters: {"commit"=>"login", "user_session"=>{"username"=>"saif", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"awFzsgVFZgmgtR9fRI0g34GkOMXKXbiJgfIQkJ3cXJE=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'saif') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/users
+Completed in 17ms (DB: 2) | 302 Found [http://127.0.0.1/loggedin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-12-14 13:31:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mOrganization Load (0.1ms)[0m   [0;1mSELECT * FROM `organizations` [0m
+Rendering template within layouts/users
+Rendering users/index
+Rendered users/_header (0.1ms)
+Rendered users/_navigation_bar (0.1ms)
+Completed in 27ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-12-14 13:31:16) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 25ms (DB: 2) | 302 Found [http://127.0.0.1/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-12-14 13:31:17) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user_sessions/new
+Completed in 20ms (View: 3, DB: 2) | 200 OK [http://127.0.0.1/]
