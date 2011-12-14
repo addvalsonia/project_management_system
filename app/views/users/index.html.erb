@@ -1,5 +1,11 @@
 <%= render :partial => 'header'%>
-<%= render :partial => 'navigation_bar'%>
+<% if current_user.role == "su"%>
+	<%= render :partial => 'navigation_bar'%>
+<%elsif current_user.role == "ru"%>
+	<%= render :partial => 'org_admin_navigation_bar'%>
+<%elsif current_user.role == "sub"%>
+	<%= render :partial => 'org_admin_navigation_bar'%>
+<% end %>
 
 <div id="main_div" style="margin-left: 300px" align="middle">
 	<% unless flash[:notice].blank?%>
