@@ -29,6 +29,7 @@ class OrganizationsController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @organization }
+      format.js
     end
   end
 
