@@ -24,6 +24,7 @@ ActionController::Routing::Routes.draw do |map|
   # Sample resource route with sub-resources:
   #   map.resources :products, :has_many => [ :comments, :sales ], :has_one => :seller
   map.login 'login', :controller => 'user_sessions', :action => 'new'
+  map.loggedin 'loggedin', :controller => 'user_sessions', :action => 'create'
   map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'
   map.project_user_in_org "project_user_in_org/:id", :controller => "users", :action => "project_user_in_org"
   # Sample resource route with more complex sub-resources

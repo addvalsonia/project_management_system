@@ -1,46 +1,50 @@
-<div style="background-color: #ffe6d0; width: 100%">
-	<div style="width: 50%; margin-left: 50%">
-		<h2>Sign Up</h2>
-		<% form_for(:user, :url => users_path) do |f|%>
-			<%= f.error_messages %>
-			<table>
-				<tr>
-					<td>First Name : </td>
-					<td><%= f.text_field :first_name, :style => "width: 300px; height: 30px"%></td>
-				</tr>
-				<tr>
-					<td>Last Name : </td>
-					<td><%= f.text_field :last_name, :style => "width: 300px; height: 30px"%></td>
-				</tr>
-				<tr>
-					<td>Email : </td>
-					<td><%= f.text_field :email, :style => "width: 300px; height: 30px"%></td>
-				</tr>
-				<tr>
-					<td>Role : </td>
-					<td><select name="user[role]">
-						<option value="ru">Organization Admin</option>
-						<option value="sub">Normal User</option>
-					</select></td>
-				</tr>
-				<tr>
-					<td>Username : </td>
-					<td><%= f.text_field :username, :style => "width: 300px; height: 30px"%></td>
-				</tr>
-				<tr>
-					<td>Password : </td>
-					<td><%= f.password_field :password, :style => "width: 300px; height: 30px"%></td>
-				</tr>
-				<tr>
-					<td>Confirm Password : </td>
-					<td><%= f.password_field :password_confirmation, :style => "width: 300px; height: 30px"%></td>
-				</tr>
-				<tr></tr>
-				<tr>
-					<td></td>
-					<td><%= f.submit 'Create'%></td>
-				</tr>
-			</table>
-		<% end %>
+<body style="background-color: #ffe6d0">
+	<div style="width: 100%">
+		<div style="width: 50%; padding: 10px">
+			<div style="text-align: center; background-color: #e9e9c0"><h2>Add New User</h2></div>
+			<div style="border: 1px solid #c6c6ff">
+				<% form_for(:user, :url => users_path) do |f|%>
+					<%= f.error_messages %>
+					<table cellpadding="5px">
+						<tr>
+							<td><b>First Name : </b></td>
+							<td><%= f.text_field :first_name, :style => "width: 300px; height: 30px;font-size: large"%></td>
+						</tr>
+						<tr>
+							<td><b>Last Name : </b></td>
+							<td><%= f.text_field :last_name, :style => "width: 300px; height: 30px;font-size: large"%></td>
+						</tr>
+						<tr>
+							<td><b>Email : </b></td>
+							<td><%= f.text_field :email, :style => "width: 300px; height: 30px;font-size: large"%></td>
+						</tr>
+						<tr>
+							<td><b>Role : </b></td>
+							<td><select name="user[role]">
+								<option value="ru">Organization Admin</option>
+								<option value="sub">Normal User</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td><b>Username : </b></td>
+							<td><%= f.text_field :username, :style => "width: 300px; height: 30px;font-size: large"%></td>
+						</tr>
+						<tr>
+							<td><b>Password : </b></td>
+							<td><%= f.password_field :password, :style => "width: 300px; height: 30px;font-size: large"%></td>
+						</tr>
+						<tr>
+							<td><b>Confirm Password : </b></td>
+							<td><%= f.password_field :password_confirmation, :style => "width: 300px; height: 30px;font-size: large"%></td>
+						</tr>
+						<tr></tr>
+						<tr>
+							<td></td>
+							<td><%= f.submit 'Create'%></td>
+						</tr>
+					</table>
+				<% end %>
+			</div>
+		</div>
 	</div>
-</div>
+</body>

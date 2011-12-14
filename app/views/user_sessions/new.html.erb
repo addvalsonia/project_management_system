@@ -1,19 +1,20 @@
 <div style="width: 100%">
-	<div style="border: 1px solid; background-color: #ddb9b9; width: 50%; margin: auto">
-		<% form_for(:user_session) do |f|%>
+	<div style="border: 1px solid; background-color: #ddb9b9; width: 50%; margin-top: 250px; margin-left: 300px;padding: 5px">
+		<% form_for(:user_session, :url => loggedin_path) do |f|%>
 		<%= f.error_messages %>
 			<table width="100%" align="center">
 				<tr>
-					<td>Email/Username : </td>
+					<td><b>Email/Username : </b></td>
 					<td><%= f.text_field :username, :style => "width: 300px; height: 30px; font-size: large"%></td>
 				</tr>
+				<tr></tr>
 				<tr>
-					<td>Password : </td>
+					<td><b>Password : </b></td>
 					<td><%= f.password_field :password, :style => "width: 300px; height: 30px; font-size: large",:autocomplete => "false"%></td>
 				</tr>
 				<tr>
 					<td></td>
-					<td><%= f.submit 'login'%></td>
+					<td><%= f.submit 'login' ,:style => "width:100px;font-size:large"%></td>
 				</tr>
 			</table>
 		<% end %>
