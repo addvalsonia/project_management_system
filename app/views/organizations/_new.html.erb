@@ -1,14 +1,27 @@
-<h1>New organization</h1>
-
-<% form_for(@organization) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :org_name %><br />
-    <%= f.text_field :org_name %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
+<div align="left" id="create_organization">
+	<h3>New organization</h3>
+	
+	<% form_for(@organization) do |f| %>
+	  <%= f.error_messages %>
+	
+	  <p>
+	    <%= f.label "Organization Name"%>  <%= f.text_field :org_name %>
+	  </p>
+	  <br />
+	  <p>
+	  	 <b>Organization Administrative</b>
+	  	<select name="user_id">
+	  		<option value = "">Select</option>
+	 		<% @user.each do |records|%>
+				<option value="<%= records.id%>" ><%=h records.first_name.capitalize%></option>
+			<%end%>
+		</select>
+	  </p>
+	  <br />
+	  <p>
+	    <%= f.submit 'Create' %>
+	  </p>
+	<% end %>
+	
+</div>
 

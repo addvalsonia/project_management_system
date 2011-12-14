@@ -24,8 +24,9 @@ class OrganizationsController < ApplicationController
   # GET /organizations/new
   # GET /organizations/new.xml
   def new
+    role = "ru"
     @organization = Organization.new
-
+    @user = User.find_by_sql("select id,first_name from users where role = 'ru'")
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @organization }
@@ -42,11 +43,14 @@ class OrganizationsController < ApplicationController
   # POST /organizations.xml
   def create
     @organization = Organization.new(params[:organization])
-
-    respond_to do |format|
+    
+    respond_to do |format|@user
       if @organization.save
         flash[:notice] = 'Organization was successfully created.'
-        format.html { redirect_to(@organization) }
+        
+        @org_user = OrgUser.new(:organization_id => @organization.id, :user_id => params[:user_id])
+        @org_user.save
+        format.html { redirect_to(users_url) }
         format.xml  { render :xml => @organization, :status => :created, :location => @organization }
       else
         format.html { render :action => "new" }
