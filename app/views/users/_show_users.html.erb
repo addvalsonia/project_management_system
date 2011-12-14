@@ -1,15 +1,22 @@
 <div class="organization_users" >
 	<h3 style="text-align: center">Users in <%= @organizations.org_name%></h3>
 	<table cellpadding="3" cellspacing="3" width="50%" >
+		
 		<% if @users.size > 0 %>
-			<tr>
+			<tr align="left">
 				<th>Name</th>
 				<th>Email</th>
+				<th>Role</th>
 			</tr>
 			<% @users.each do |u| %>
-				<tr>
+				<tr align="left">
 					<td><%= u.first_name%> <%= u.last_name%></td>
 					<td><%= u.email%></td>
+					<% if u.role == "ru" %>
+						<td>Organization Administrator</td>
+					<% else %>
+						<td>Normal User</td>
+					<% end%>
 				</tr>
 			<% end %>
 		<% else %>

@@ -1,13 +1,15 @@
 <div class="organization_projects" >
 	<h3 style="text-align: center">Projects in <%= @organizations.org_name%></h3>
+	<div align="right"></div>
 	<table cellpadding="3" cellspacing="3" width="50%" >
+		
 		<% if @projects.size > 0 %>
 			<tr align="left">
 				<th>Project Name</th>
 				<th>Description</th>
 			</tr>
 			<% @projects.each do |p| %>
-				<tr>
+				<tr align="left">
 					<td><%= p.project_name%> </td>
 					<td><%= p.desc%></td>
 				</tr>
