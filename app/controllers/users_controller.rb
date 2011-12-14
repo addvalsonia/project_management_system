@@ -98,4 +98,13 @@ class UsersController < ApplicationController
       format.js 
     end
   end
+  
+  def showdiv
+    v = params[:value]
+    debugger
+    respond_to do |f|
+      f.js
+    end
+  end
+  
 end
