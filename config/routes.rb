@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :organizations
-
-  map.resources :projects
+  map.resources :organizations do |o|
+          o.resources :projects
+              end
 
   map.resources :users
   map.resources :user_sessions

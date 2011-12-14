@@ -1,0 +1,27 @@
+<div id="creating_project">
+	<h3 align="middle">New project</h3>
+	<table>
+		<% form_for(:project, :url => organization_projects_path(@organization.id) ) do |f| %>
+		  	<%= f.error_messages %>
+			<tr>
+				<td><%= f.label "Project Name" %></td>
+				<td><%= f.text_field :project_name %></td>
+			</tr>
+			<tr>
+				<td><%= f.label "Description   " %></td>
+				<td><%= f.text_field :desc %></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				  <div align="middle">
+					  <p>
+					    <%= f.submit 'Create' %>
+					  </p>
+				  </div>
+				</td>
+			</tr>		
+	<% end %>
+	</table>
+	
+</div>
+
