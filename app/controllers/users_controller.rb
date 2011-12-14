@@ -3,8 +3,11 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
   def index
-    
-    @organizations = Organization.all
+    if current_user.role == "su"
+      @organizations = Organization.all
+    elsif current_user.role == "ru"
+      @organizations = Organization.find_by_sql("select * from organizations where id in (select organization_id from org_users where user_id = #{current_user.id}) ")
+    end  
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @users }
