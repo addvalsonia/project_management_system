@@ -1,5 +1,5 @@
 <div id="org_projects_div">
-	<%= select(:user, :role,
+	<%= select(nil, :project_id,
 	Project.find_by_sql("select * from projects where id in (select project_id from org_projects where organization_id = '#{params[:org_id]}')").collect{|p|[p.project_name,p.id]},
 	{:include_blank => true}, :style => "width:150px")%>
 </div>

@@ -1,10 +1,7 @@
-<select >
-	<% if @organizations.size > 0 %>
-		<% @organizations.each do |o| %>
-			<option><%= o.org_name %> </option>
-		<% end %>
-	<% else %>
-		<option>No Organization</option>
-	<% end %>	
-</select>
+<% if @organizations.size > 0 %>
+	<%= select(nil, :organization_id,@organizations.collect{|c|[c.org_name,c.id]},
+	{:include_blank => true}, :style => "width:150px")%>
+<% else %>
+	<%= select(nil, :organization_id,["No Organization",0],{:include_blank => true}, :style => "width:150px")%>
+<% end %>
 
