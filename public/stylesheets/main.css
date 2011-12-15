@@ -247,3 +247,39 @@ h3 {
 	-webkit-margin-end: 0px;
 	font-weight: bold;
 }
+#org_edit{
+		display: block;
+	border: 1px solid #DDD;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #DDD;
+	border-right-color: #DDD;
+	border-bottom-color: #DDD;
+	border-left-color: #DDD;
+	padding: 0 20px 5px;
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	font-size: 12px;
+	margin: 20px 0;
+	margin-top: 50px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	border-radius: 6px;
+	border-top-left-radius: 6px 6px;
+	border-top-right-radius: 6px 6px;
+	border-bottom-right-radius: 6px 6px;
+	border-bottom-left-radius: 6px 6px;
+	box-shadow: #DDD 2px 3px 4px;
+	-webkit-box-shadow: #DDD 2px 3px 4px;
+	-moz-box-shadow: #DDD 2px 3px 4px;
+
+}

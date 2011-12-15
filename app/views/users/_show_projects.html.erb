@@ -1,8 +1,9 @@
+
 <div class="organization_projects" >
 	<div align="right">
-		<%= link_to_remote "+ New Project", :url => new_organization_project_path(@organizations.id), :method => :get %>
+		<%= link_to_remote "+ New Project", :url => new_organization_project_path(@organization.id), :method => :get %>
 	</div>
-	<h3 style="text-align: center">Projects in <%= @organizations.org_name%></h3>
+	<h3 style="text-align: center">Projects in <%= @organization.org_name%></h3>
 	<table cellpadding="3" cellspacing="3" width="50%" >
 		
 		<% if @projects.size > 0 %>
@@ -14,8 +15,8 @@
 				<tr align="left">
 					<td><%= p.project_name%> </td>
 					<td><%= p.desc%></td>
-					<td><%= link_to_remote "EDIT",:url => edit_organization_project_path(@organizations.id,p)%></td>
-					<td><%= link_to_remote "DELETE", :update => "projects", :url =>  organization_project_path(p.id),:method => 'delete', :confirm => "Are you sure?" %></td>
+					<td><%= link_to_remote "EDIT",:url => edit_organization_project_path(@organization.id,p), :method => :get %></td>
+					<td><%= link_to_remote "DELETE", :update => "projects", :url =>  organization_project_path(@organization.id,p.id),:method => 'delete', :confirm => "Are you sure?" %></td>
 				
 				</tr>
 				

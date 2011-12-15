@@ -1,0 +1,18 @@
+<div id="org_edit">
+	<h3>Editing Organization</h3>
+	<table>
+	<% form_for(@organization) do |f| %>
+	  <%= f.error_messages %>
+		<tr align="left">
+			<td><%= f.label :org_name %></td>
+			<td><%= f.text_field :org_name %></td>			
+		</tr>
+		<tr>
+			<td colspan="2">
+				<%= f.submit 'Update' %>		
+			</td>
+		</tr>
+	<% end %>
+	</table>
+	
+</div>

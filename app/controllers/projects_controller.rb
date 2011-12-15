@@ -36,6 +36,7 @@ class ProjectsController < ApplicationController
 
   # GET /projects/1/edit
   def edit
+    
     @project = Project.find(params[:id])
   end
 
@@ -67,7 +68,7 @@ class ProjectsController < ApplicationController
     respond_to do |format|
       if @project.update_attributes(params[:project])
         flash[:notice] = 'Project was successfully updated.'
-        format.html { redirect_to(@project) }
+        format.html { redirect_to(users_url) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -79,11 +80,13 @@ class ProjectsController < ApplicationController
   # DELETE /projects/1
   # DELETE /projects/1.xml
   def destroy
+    
     @project = Project.find(params[:id])
+    @org_project = OrgProject.find_by_sql("select * from org_projects where project_id = '#{ params[:id] }' and organization_id = '#{ params[:organization_id]}'")
     @project.destroy
-
+    @org_project.destroy
     respond_to do |format|
-      format.html { render :controller => 'users',:action => 'index' }
+      format.html { redirect_to(users_url) }
       format.xml  { head :ok }
     end
   end

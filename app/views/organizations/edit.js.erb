@@ -1,0 +1,6 @@
+$("#projects_div").hide();
+$("#project_user_div").hide();
+$("#users_div").hide();
+$("#new_org").hide();
+$("#edit_org").show();
+$("#edit_org").html("<%= escape_javascript(render("organizations/edit")) %>");

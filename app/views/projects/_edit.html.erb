@@ -1,6 +1,6 @@
 <h3>Editing project</h3>
 
-<% form_for(:project, :url => organization_project_path(params[:organization_id],@project) ) do |f| %>
+<% form_for(@project, :url => organization_project_path(params[:organization_id],@project) ) do |f| %>
   <%= f.error_messages %>
 
   <p>

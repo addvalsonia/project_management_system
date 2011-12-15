@@ -28,6 +28,8 @@ ActionController::Routing::Routes.draw do |map|
   map.showdiv 'showdiv', :controller => 'users', :action => 'showdiv'
   map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'
   map.project_user_in_org "project_user_in_org/:id", :controller => "users", :action => "project_user_in_org"
+  map.destroyproject "destroyproject",:controller => "projects", :action => "destroy" 
+
   # Sample resource route with more complex sub-resources
   #   map.resources :products do |products|
   #     products.resources :comments

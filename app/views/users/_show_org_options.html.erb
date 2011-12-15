@@ -1,0 +1,2 @@
+<%= link_to_remote "Edit Organization", :url => edit_organization_path(@organization.id), :method => :get %>
+<%= link_to "Delete Organization", organization_path(@organization.id), :method => 'delete', :confirm => "Are you sure?" %>

@@ -24,7 +24,7 @@ class OrganizationsController < ApplicationController
   # GET /organizations/new
   # GET /organizations/new.xml
   def new
-    role = "ru"
+    
     @organization = Organization.new
     @user = User.find_by_sql("select id,first_name from users where role = 'ru'")
     respond_to do |format|
@@ -67,7 +67,7 @@ class OrganizationsController < ApplicationController
     respond_to do |format|
       if @organization.update_attributes(params[:organization])
         flash[:notice] = 'Organization was successfully updated.'
-        format.html { redirect_to(@organization) }
+        format.html { redirect_to(users_url) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -80,11 +80,12 @@ class OrganizationsController < ApplicationController
   # DELETE /organizations/1.xml
   def destroy
     @organization = Organization.find(params[:id])
-    @organization.destroy
 
     respond_to do |format|
-      format.html { redirect_to(organizations_url) }
-      format.xml  { head :ok }
+      if @organization.destroy
+        format.html { redirect_to(users_url) }
+        format.xml  { head :ok }
+      end
     end
   end
 end
