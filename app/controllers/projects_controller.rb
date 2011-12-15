@@ -83,7 +83,7 @@ class ProjectsController < ApplicationController
     @project.destroy
 
     respond_to do |format|
-      format.html { redirect_to(projects_url) }
+      format.html { render :controller => 'users',:action => 'index' }
       format.xml  { head :ok }
     end
   end

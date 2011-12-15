@@ -237,3 +237,13 @@ div.column_wrap_bar div.column {
 	-webkit-box-shadow: #DDD 2px 3px 4px;
 	-moz-box-shadow: #DDD 2px 3px 4px;
 }
+
+h3 {
+	display: block;
+	font-size: 1.17em;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+}

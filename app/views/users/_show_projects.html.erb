@@ -14,12 +14,16 @@
 				<tr align="left">
 					<td><%= p.project_name%> </td>
 					<td><%= p.desc%></td>
+					<td><%= link_to_remote "EDIT",:url => edit_organization_project_path(@organizations.id,p)%></td>
+					<td><%= link_to_remote "DELETE", :update => "projects", :url =>  organization_project_path(p.id),:method => 'delete', :confirm => "Are you sure?" %></td>
+				
 				</tr>
+				
 			<% end %>
 		<% else %>
 			<tr><h3>No Project</h3></tr>
 		<% end %>
 	</table>
-	<div id="add_project"></div>
+	<div id="generic_project"></div>
 	
 </div>
