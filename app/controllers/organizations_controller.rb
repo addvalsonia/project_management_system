@@ -42,7 +42,13 @@ class OrganizationsController < ApplicationController
   # POST /organizations
   # POST /organizations.xml
   def create
-    @organization = Organization.new(params[:organization])
+    debugger
+    if params[:user_id] == ""
+      @organization = Organization.new(params[:organization])
+    else
+      @organization = Organization.new(params[:organization])
+      @organization.assign = 1
+    end
     
     respond_to do |format|@user
       if @organization.save

@@ -93,7 +93,7 @@ class UsersController < ApplicationController
    
     @projects = Project.find_by_sql("select * from projects where id in(select project_id from org_projects where organization_id = #{ params[:id] })")
     @users = User.find_by_sql("select * from users where id in(select user_id from org_users where organization_id = #{ params[:id] })")
-    @organizations = Organization.find(params[:id])
+    @organization = Organization.find(params[:id])
     respond_to do |format|
       format.js 
     end
