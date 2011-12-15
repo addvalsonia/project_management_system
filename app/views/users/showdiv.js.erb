@@ -1,1 +1,11 @@
-$("#new_user_div").html("<%= escape_javascript(render("simple_user_cascade")) %>")
+<% if params[:role] == "sub" %>
+	$("#new_user_div").show()
+	$("#new_user_div").html("<%= escape_javascript(render("simple_user_cascade")) %>")
+<% end%>
+<% if params[:role] == "ru" %>
+	$("#new_user_div").show()
+	$("#new_user_div").html("<%= escape_javascript(render("org_admin_cascade_select")) %>")
+<% end %>
+<% if params[:role] == "" %>
+	$("#new_user_div").hide()
+<% end %>

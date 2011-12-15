@@ -24,10 +24,10 @@
 						<tr>
 							<td><b>Role : </b></td>
 							<td><%= select(:user, :role,[['Organization Admin', 'ru'],['Normal User','sub']],{:include_blank => true},
-							:style=> "width:100px",:onchange => remote_function(:url => showdiv_path), :with => "'role=' + value")%></td>
+							:style=> "width:100px",:onchange => remote_function(:url => showdiv_path, :with => "'role=' + value"))%></td>
 						</tr>
 						<tr>
-							<td></td>
+							<td><b>Assign : </b></td>
 							<td><div id="new_user_div"></div></td>
 						</tr>
 						<tr>

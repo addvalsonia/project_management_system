@@ -1,5 +1,7 @@
-<select name="user[role]" onchange="#{remote_function(:url => {:action => "showdiv"})}">
-	<option value="ru">project 1</option>
-	<option value="sub">project 2</option>
-</select>
+<table>
+	<tr>
+		<td><%= select(:user, :role,[['Organization 1', 1],['Organization 2',2]],{:include_blank => true}, :onchange =>remote_function(:url =>{:action => "update_project_div"},:with => "'org_id='+ value",:update => "org_projects_div"))%></td>
+		<td><%= render "org_project_partial"%></td>
+	</tr>
+</table>
 

@@ -100,11 +100,19 @@ class UsersController < ApplicationController
   end
   
   def showdiv
-    v = params[:value]
-    debugger
+    if(params[:role] == "ru")
+      @organizations = Organization.find(:all)
+    elsif(params[:role == "sub"])
+      @projects = Project.find(:all)
+    end
     respond_to do |f|
       f.js
     end
   end
-  
+ 
+ def update_project_div
+   respond_to do |f|
+     f.js
+   end
+ end 
 end

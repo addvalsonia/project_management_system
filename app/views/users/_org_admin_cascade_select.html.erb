@@ -1,5 +1,10 @@
-<select name="user[role]" onchange="#{remote_function(:url => {:action => "showdiv"})}">
-	<option value="ru">Organization Admin</option>
-	<option value="sub">Normal User</option>
+<select >
+	<% if @organizations.size > 0 %>
+		<% @organizations.each do |o| %>
+			<option><%= o.org_name %> </option>
+		<% end %>
+	<% else %>
+		<option>No Organization</option>
+	<% end %>	
 </select>
 
